@@ -1,6 +1,8 @@
+import styles from './index.module.scss'
+
 export default function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       Footer
     </footer>
   )
