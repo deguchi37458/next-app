@@ -1,8 +1,10 @@
 import Link from 'next/link'
 
+import styles from './index.module.scss'
+
 export default function Nav() {
   return (
-    <nav>
+    <nav className={styles.globalNav}>
       <ul>
         <li>
         <Link href="/">
