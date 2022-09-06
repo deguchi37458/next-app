@@ -1,7 +1,20 @@
+import BreadCrumb from '@/components/Common/BreadCrumb'
+
 export default function Work(): JSX.Element {
   return (
     <>
-      <h1>Work</h1>
+      <BreadCrumb 
+        lists={[
+          {
+            name: "ホーム",
+            path: "/",
+          },
+          {
+            name: "Work",
+          },
+        ]}
+      />
+      <h1>WorkContents</h1>
     </>
   )
 }
