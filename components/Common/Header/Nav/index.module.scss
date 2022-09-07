@@ -1,6 +1,15 @@
-.globalNav {
-  ul {
-    display: flex;
-    gap: 20px;
+.open .btn {
+  color: red;
+}
+.close .btn {
+  color: blue;
+}
+.btn {
+  @media (min-width: 768px) {
+    display: none;
   }
+}
+.lists {
+  display: flex;
+  gap: 20px;
 }
