@@ -5,11 +5,36 @@
   color: blue;
 }
 .btn {
-  @media (min-width: 768px) {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    position: relative;
+    z-index: 100;
+  }
+}
+.list {
+  display: flex;
+  gap: 20px;
+  @media (max-width: 767px) {
     display: none;
   }
 }
-.lists {
-  display: flex;
-  gap: 20px;
+.drawer {
+  display: none;
+  @media (max-width: 767px) {
+    display: flex;
+    position: fixed;
+    inset: 0 -100% 0 100%;
+    background-color: rgba(0, 0, 0, .8);
+    transition: transform .4s;
+
+    color: #eee;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.open .drawer {
+  transform: translateX(-100%)
 }
