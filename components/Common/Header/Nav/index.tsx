@@ -13,9 +13,10 @@ export default function Nav() {
   }
 
   return (
-    <nav className={navIsOpen ? styles.open : styles.close}>
+    <nav className={(navIsOpen ? styles.open : styles.close)}>
       <button className={styles.btn} onClick={toggleNav}>
-        MENU
+        <span></span>
+        <span></span>
       </button>
       <ul className={styles.list}>
         <li>
