@@ -16,8 +16,8 @@ export default function Nav() {
     <>
     <div className={(navIsOpen ? styles.open : styles.close)}>
       <button className={styles.btn} onClick={toggleNav}>
-      <span></span>
-      <span></span>
+        <span></span>
+        <span></span>
       </button>
       <ul className={styles.drawer}>
         <li>
