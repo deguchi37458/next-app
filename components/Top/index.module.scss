@@ -1,12 +1,15 @@
 .top {
-  min-height: 90vh;
+  position: relative;
+  min-height: 100vh;
   background-color: #A30130;
   padding:30px
 }
 
 .title {
+  position: absolute;
+  bottom: 30px;
   color: #FCEDD5;
-  font-size: 120px;
+  font-size: 11vw;
   span {
     display: block;
   }
