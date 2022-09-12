@@ -1,6 +1,6 @@
 export const siteMeta = {
-  siteTitle: 'Next.js Template',
-  siteDesc: 'Next.jsのテンプレート',
+  siteTitle: 'Hiroki Deguchi Portfolio 2023',
+  siteDesc: 'Hiroki Deguchi Portfolio 2023',
   siteUrl: 'http://localhost:3000',
   siteLang: 'ja',
   siteLocale: 'ja_JP',
