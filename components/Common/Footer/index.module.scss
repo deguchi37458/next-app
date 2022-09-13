@@ -1,4 +1,30 @@
 .footer {
-  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+  color: #fff;
+  background-color: #1b1b1b;
+  padding: 30px;
+}
+
+.list {
   padding: 20px;
+  border-top: solid 1px #fff;
+  display: flex;
+  a {
+    position: relative;
+    &:hover {
+      &:before {
+        position: absolute;
+        left: -15px;
+        content: ">";
+      }
+      &:after {
+        content: "_";
+        position: absolute;
+        right: -15px;
+      }
+    } 
+  }
 }
