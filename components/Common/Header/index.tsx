@@ -1,12 +1,14 @@
 import styles from './index.module.scss'
 import Logo from '@/components/Common/Header/Logo'
-import Nav from '@/components/Common/Header/Nav'
+import Burger from '@/components/Common/Header/Burger'
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Logo />
-      <Nav />
+      <div className={styles.headerInner}>
+        <Logo />
+        <Burger />
+      </div>
     </header>
   )
 }

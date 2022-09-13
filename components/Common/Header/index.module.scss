@@ -1,8 +1,14 @@
 .header {
   position: fixed;
   width: 100%;
+  padding: 0 30px;
+  z-index: 100;
+}
+
+.headerInner {
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  z-index: 100;
+  align-items: center;
+  border-bottom: solid 1px #FCEDD5;
 }
