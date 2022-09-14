@@ -1,0 +1,32 @@
+.passingBar {
+  position: relative;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+  }
+  .passingText {
+    color :#fff;
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    font-size: 4.0rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  &.move {
+    &:before {
+      animation: passingBar 1s ease 0s 1 normal forwards;
+    }
+    .passingText {
+      animation: passingText 0s ease .5s 1 normal forwards;
+    }
+  }
+}
