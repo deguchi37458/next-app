@@ -17,7 +17,8 @@ export default function Top(): JSX.Element {
           trigger: el,
           start: 'top center',
           end: 'bottom center',
-          toggleActions: 'play pause resume reset'
+          toggleActions: 'play pause resume reset',
+          scrub: true
         }
       })
     })
