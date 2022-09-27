@@ -18,7 +18,7 @@ export default function Top(): JSX.Element {
           start: 'top center',
           end: 'bottom center',
           toggleActions: 'play pause resume reset',
-          scrub: true
+          markers: true
         }
       })
     })
