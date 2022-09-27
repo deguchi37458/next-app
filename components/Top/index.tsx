@@ -10,7 +10,6 @@ export default function Top(): JSX.Element {
     const els = document.querySelectorAll<HTMLElement>('.color')
     els.forEach(el => {
       let color = el.dataset.color;
-      console.log(color);
       
       gsap.to('body', {
         backgroundColor: color,
