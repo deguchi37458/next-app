@@ -1,6 +1,8 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 
+import PassingBar from "@/components/Common/PassingBar";
+
 import styles from "./index.module.scss"
 
 export default function Top(): JSX.Element {
@@ -18,7 +20,7 @@ export default function Top(): JSX.Element {
           start: 'top center',
           end: 'bottom center',
           toggleActions: 'play pause resume reset',
-          markers: true
+          scrub: true
         }
       })
     })
@@ -27,21 +29,13 @@ export default function Top(): JSX.Element {
   return (
     <>
       <section className={`${styles.sec} color`} data-color="#a30130">
-        <h1 className={styles.title}>
-          <span>Hiroki Deguchi</span>
-          <span>Portfolio</span>
-          <span>2023</span>
-        </h1>
+        <PassingBar>Hiroki Deguchi</PassingBar>
       </section>
       <section className={`${styles.sec} color`} data-color="#266677">
-        <h1 className={styles.title}>
-          About
-        </h1>
+        <PassingBar>About</PassingBar>
       </section>
       <section className={`${styles.sec} color`} data-color="#f6f7a7">
-        <h1 className={styles.title}>
-          Work
-        </h1>
+        <PassingBar>Work</PassingBar>
       </section>
     </>
   )

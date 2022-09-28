@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 
 import styles from './index.module.scss'
 
-export default function PassingBar() {
+export default function PassingBar( {children}: any ) {
   gsap.registerPlugin(ScrollTrigger);
   const ref = useRef<any>();
   useEffect (() => {
@@ -49,9 +49,9 @@ export default function PassingBar() {
   return (
     <>
     <div ref={ref}>
-      <span className="passingBar">
-        <span className="passingText">WORK</span>
-      </span>
+      <div className={`${styles.passingBar} passingBar`}>
+        <h2 className={`${styles.title} ${styles.passingText} passingText`}>{children}</h2>
+      </div>
     </div>
     </>
   )

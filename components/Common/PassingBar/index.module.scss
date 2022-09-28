@@ -17,7 +17,7 @@
     color :#fff;
     opacity: 0;
     transform: translate3d(0, 0, 0);
-    font-size: 4.0rem;
+    // font-size: 4.0rem;
     font-weight: bold;
     line-height: 1.5;
   }
@@ -28,5 +28,16 @@
     .passingText {
       animation: passingText 0s ease .5s 1 normal forwards;
     }
+  }
+}
+
+.title {
+  position: absolute;
+  // bottom: 30px;
+  color: #FCEDD5;
+  font-size: 11vw;
+  line-height: 1.1;
+  span {
+    display: block;
   }
 }
