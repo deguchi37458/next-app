@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   transform: translate3d(0, 0, 0);
-  &:before {
+  .bar {
     content: '';
     display: inline-block;
     width: 0;
@@ -26,18 +26,19 @@
       animation: passingBar 1s ease 0s 1 normal forwards;
     }
     .passingText {
+      opacity: 1;
       animation: passingText 0s ease .5s 1 normal forwards;
     }
   }
 }
 
 .title {
-  position: absolute;
+  // position: absolute;
   // bottom: 30px;
-  color: #FCEDD5;
+  // color: #FCEDD5;
   font-size: 11vw;
-  line-height: 1.1;
-  span {
-    display: block;
-  }
+  // line-height: 1.1;
+  // span {
+    // display: block;
+  // }
 }
