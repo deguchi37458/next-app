@@ -30,6 +30,8 @@ export default function Top(): JSX.Element {
     <>
       <section className={`${styles.sec} color`} data-color="#a30130">
         <PassingBar>Hiroki Deguchi</PassingBar>
+        <PassingBar>Portfolio</PassingBar><br></br>
+        <PassingBar>2023</PassingBar>
       </section>
       <section className={`${styles.sec} color`} data-color="#266677">
         <PassingBar>About</PassingBar>

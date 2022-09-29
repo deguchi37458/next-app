@@ -69,25 +69,6 @@ export default function PassingBar( {children}: any ) {
       }
     )
   }, [])
-  // useEffect (() => {
-  //   const element = ref.current;
-  //   gsap.fromTo(
-  //     element.querySelector(".passingText"),
-  //     {
-  //       opacity: 0,
-  //     },
-  //     {
-  //       opacity: 1,
-  //       scrollTrigger: {
-  //         trigger: element.querySelector(".passingText"),
-  //         start: "bottom bottom",
-  //         end: "bottom center",
-  //         scrub: true,
-  //         markers: true
-  //       }
-  //     }
-  //   )
-  // }, [])
   return (
     <>
       <div ref={ref} className={`${styles.passingBar} passingBar`}>
