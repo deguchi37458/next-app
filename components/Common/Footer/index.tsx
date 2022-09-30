@@ -5,7 +5,6 @@ import PassingBar from '@/components/Common/PassingBar'
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <PassingBar></PassingBar>
       <div className={styles.list}>
         <ul>
           <li><a href="">Twitter</a></li>
